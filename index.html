@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Devis Gratuit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+  header {
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #0d6efd;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition:0.3s;
+    }
+
+    button:hover {
+      background: #0b5ed7;
+    }
+
+    .success {
+      display: none;
+      color: green;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .info {
+      font-size: 12px;
+      color: gray;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+ <h1>AREBATOP – Recevez jusqu'à 3 devis gratuits</h1>
+<p>Comparez les meilleurs artisans près de chez vous en quelques minutes</p>
+<p>&#10003; Devis gratuit sous 24h | &#10003; Sans engagement | &#10003; Travaux de qualité</p>
+
+<p>📞 0665733916 | ✉ arela.artisan@gmail.com</p>
+ 
+<a href="https://wa.me/33665733916" target="_blank">
+  <button style="background: green; color: white; padding: 12px; border: none; border-radius: 6px; cursor: pointer;">
+    Contactez-nous sur WhatsApp
+  </button>
+</a> 
+</header>
+
+<div class="container">
+
+  <!-- FORMULAIRE -->
+  <form action="https://formspree.io/f/mojkrdrg"method="POST">
+    
+    <input type="text" name="nom" placeholder="Nom" required>
+    
+    <input type="email" name="email" placeholder="Email" required>
+    
+    <input type="tel" name="telephone" placeholder="Téléphone" required>
+
+    <select name="service" required>
+      <option value="">Type de service</option>
+      <option>Plomberie</option>
+      <option>Électricité</option>
+      <option>Rénovation</option>
+    </select>
+
+    <input type="text" name="ville" placeholder="Ville" required>
+
+    <textarea name="message" placeholder="Décrivez votre besoin" required></textarea>
+
+    <button type="submit">Recevoir mes devis</button>
+
+  </form>
+ <div style="margin-top:20px; text-align:center;">
+  <p>✔ +10 ans d’expérience dans la renovation</p>
+  <p>✔ Intervention rapide dans toute la région</p>
+  <p>✔ Devis gratuit et sans engagement</p>
+  <p>✔ Clients satisfaits</p>
+</div>                            
+
+  <p class="info">
+    Vos informations sont transmises à des professionnels partenaires.
+  </p>
+
+</div>
+
+</body>
+</html>
