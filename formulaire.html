@@ -6,11 +6,59 @@
 <title>Demande de devis</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  background: white;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  background: #FFD700;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+</style>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+</style>
 <body style="font-family: Arial; padding: 20px;">
 
 <h2 style="text-align:center;">Recevez vos devis gratuits</h2>
-
+<div class="container">
 <form action="https://formspree.io/f/mojkrdng" method="POST">
 
 <input type="text" name="nom" placeholder="Nom" required><br><br>
@@ -31,8 +79,8 @@
 <textarea name="message" placeholder="Décrivez votre besoin" required></textarea><br><br>
 
 <button type="submit">Recevoir mes devis</button>
-
+ 
 </form>
-
+</div>
 </body>
 </html>
