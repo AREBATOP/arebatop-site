@@ -4,8 +4,12 @@
     <loc>https://arebatop.github.io/arebatop-site/</loc>
     <lastmod>2026-09-30</lastmod>
   </url>
-  <url>
-    <loc>https://arebatop.github.io/arebatop-site/formulaire.html</loc>
-    <lastmod>2026-09-30</lastmod>
-  </url>
+       <url>
+        <loc>https://arebatop.github.io/arebatop-site/formulaire.html</loc>
+        <lastmod>2026-09-30</lastmod>
+    </url>
+    <url>
+        <loc>https://arebatop.github.io/arebatop-site/peinture-interieure.html</loc>
+        <lastmod>2026-09-30</lastmod>
+    </url>
 </urlset>
