@@ -39,16 +39,24 @@ footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:24px 15px;font
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Organization",
+  "@type":["LocalBusiness","Painter"],
   "name":"AREBATOP",
   "url":"https://arebatop.github.io/arebatop-site/",
   "telephone":"+33665733916",
-  "areaServed":{
-    "@type":"AdministrativeArea",
-    "name":"Val-de-Marne"
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"24 Rue Garnier Pages",
+    "postalCode":"94100",
+    "addressLocality":"Saint-Maur-des-Fossés",
+    "addressRegion":"Île-de-France",
+    "addressCountry":"FR"
   },
-  "description":"Entreprise de peinture et rénovation à Saint-Maur-des-Fossés et dans le Val-de-Marne.",
-  "serviceType":["Peinture intérieure","Rénovation intérieure","Béton ciré","Résine époxy","Rénovation de salle de bains","Panneaux décoratifs"]
+  "areaServed":[
+    {"@type":"City","name":"Saint-Maur-des-Fossés"},
+    {"@type":"AdministrativeArea","name":"Val-de-Marne"}
+  ],
+  "description":"Entreprise de peinture et rénovation intérieure à Saint-Maur-des-Fossés et dans le Val-de-Marne.",
+  "serviceType":["Peinture intérieure","Rénovation intérieure","Béton ciré","Résine époxy","Rénovation de salle de bains","Revêtement architectural adhésif"]
 }
 </script>
 </head>
