@@ -109,40 +109,6 @@
       margin: 18px 0;
     }
 
-    .coverstyl-gallery {
-      display: none;
-      margin: 18px 0 24px;
-      padding: 18px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-    }
-
-    .coverstyl-gallery.is-visible { display: block; }
-    .coverstyl-gallery h3 { margin: 0 0 8px; }
-    .coverstyl-gallery .gallery-note { margin: 0 0 14px; color: #4b5563; font-size: 13px; }
-    .coverstyl-photos {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-    }
-    .coverstyl-photos a { display: block; text-decoration: none; }
-    .coverstyl-photos img {
-      display: block;
-      width: 100%;
-      height: 115px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
-    .coverstyl-photos span { display: block; margin-top: 6px; font-size: 12px; font-weight: 700; }
-    .coverstyl-source { display: inline-block; margin-top: 12px; font-size: 13px; color: var(--blue-dark); }
-
-    @media (max-width: 480px) {
-      .coverstyl-photos { grid-template-columns: 1fr; }
-      .coverstyl-photos img { height: 180px; }
-    }
-
     .submit {
       width: 100%;
       padding: 16px;
@@ -259,26 +225,6 @@
         <option value="Autre">Autre</option>
       </select>
 
-      <div class="coverstyl-gallery" id="coverstyl-gallery" aria-live="polite">
-        <h3>Exemples de finitions Cover Styl®</h3>
-        <p class="gallery-note">Quelques inspirations pour votre projet de revêtement adhésif. Ces photos proviennent du fabricant Cover Styl® et ne représentent pas des chantiers réalisés par AREBATOP.</p>
-        <div class="coverstyl-photos">
-          <a href="https://coverstyl.com/fr/inspiration/hotel-novotel-thalassa/" target="_blank" rel="noopener noreferrer">
-            <img src="https://cms.coverstyl.com/uploads/hero_home_49dfb478eb_979a812e0d.jpg" alt="Exemple d'intérieur avec finitions architecturales Cover Styl" loading="lazy">
-            <span>Inspiration intérieur</span>
-          </a>
-          <a href="https://coverstyl.com/fr/inspiration/hotel-novotel-thalassa/" target="_blank" rel="noopener noreferrer">
-            <img src="https://cms.coverstyl.com/uploads/beton_688c80fda6_cf6b35b78e.jpg" alt="Exemple de finition effet marbre sur une surface intérieure Cover Styl" loading="lazy">
-            <span>Effet pierre et marbre</span>
-          </a>
-          <a href="https://coverstyl.com/fr/inspiration/hotel-novotel-thalassa/" target="_blank" rel="noopener noreferrer">
-            <img src="https://cms.coverstyl.com/uploads/sans_limite_36f58087dc_f8e4c457bb.jpg" alt="Exemple de rénovation de surfaces intérieures avec Cover Styl" loading="lazy">
-            <span>Projet de rénovation</span>
-          </a>
-        </div>
-        <a class="coverstyl-source" href="https://coverstyl.com/fr/inspiration/hotel-novotel-thalassa/" target="_blank" rel="noopener noreferrer">Voir un projet présenté par le fabricant Cover Styl®</a>
-      </div>
-
       <label for="ville">Ville du chantier <span class="required">*</span></label>
       <input
         id="ville"
@@ -326,18 +272,6 @@
 
   </main>
 
-  <script>
-    const serviceSelect = document.getElementById('service');
-    const coverstylGallery = document.getElementById('coverstyl-gallery');
-    function toggleCoverstylGallery() {
-      coverstylGallery.classList.toggle(
-        'is-visible',
-        serviceSelect.value === 'Revêtement architectural adhésif en PVC'
-      );
-    }
-    serviceSelect.addEventListener('change', toggleCoverstylGallery);
-    toggleCoverstylGallery();
-  </script>
 
   <footer>
     AREBATOP — Peinture et rénovation — Saint-Maur-des-Fossés — Val-de-Marne (94)
